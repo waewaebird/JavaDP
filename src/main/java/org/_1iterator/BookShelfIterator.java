@@ -1,20 +1,20 @@
-package org.iterator;
+package org._1iterator;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class ListBookShelfIterator implements Iterator<Book> {
-    private ListBookShelf listBookShelf;
+public class BookShelfIterator implements Iterator<Book> {
+    private BookShelf bookShelf;
     private int index;
 
-    public ListBookShelfIterator(ListBookShelf listBookShelf) {
-        this.listBookShelf = listBookShelf;
+    public BookShelfIterator(BookShelf bookShelf) {
+        this.bookShelf = bookShelf;
         this.index = 0;
     }
 
     @Override
     public boolean hasNext() {
-        if(index < listBookShelf.getLength()) {
+        if(index < bookShelf.getLength()) {
             return true;
         } else {
             return false;
@@ -26,7 +26,7 @@ public class ListBookShelfIterator implements Iterator<Book> {
         if(!hasNext()){
             throw new NoSuchElementException();
         }
-        Book book = listBookShelf.getBookAt(index);
+        Book book = bookShelf.getBookAt(index);
         index++;
         return book;
     }
