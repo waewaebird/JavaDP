@@ -1,8 +1,8 @@
-package org._4Factory;
+package org._4factory;
 
-import org._4Factory.framework.Factory;
-import org._4Factory.framework.Product;
-import org._4Factory.idcard.IDCardFactory;
+import org._4factory.framework.Factory;
+import org._4factory.framework.Product;
+import org._4factory.idcard.IDCardFactory;
 
 public class FactoryMain {
     public static void main(String[] args) {

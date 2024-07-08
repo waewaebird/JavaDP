@@ -1,4 +1,4 @@
-package org._4Factory.framework;
+package org._4factory.framework;
 
 public abstract class Factory {
     public final Product create(String owner) {
